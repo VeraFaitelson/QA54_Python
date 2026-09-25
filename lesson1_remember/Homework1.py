@@ -193,3 +193,30 @@ def check_password(password:str) -> bool:
 print(check_password("python123"))
 print(check_password("python"))
 print(check_password("python 123"))
+
+
+
+#Variant 2
+
+def check_password2(password:str) -> bool:
+    if len(password) < 8:
+        return False
+    for char in password:
+        if char.isspace():
+            return False
+    return True
+
+print(check_password2("python123"))
+print(check_password2("python"))
+print(check_password2("python 123"))
+
+#Variant 3
+
+def check_password3(password:str) -> bool:
+    return len(password)>=8 and " " not in password and not password.isalpha()
+
+
+print(check_password3("python123"))
+print(check_password3("python"))
+print(check_password3("python 123"))
+
