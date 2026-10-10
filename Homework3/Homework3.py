@@ -57,7 +57,7 @@ def is_valid_point(point:tuple):
         return None
     if len(point) != 2:
         return False
-    if not isinstance(point[0], (int, float)) or not isinstance(point[1], (int, float)):
+    if (type (point[0]) is not (int or float)) or (type (point[1]) is not (int or float)):
         return False
     else:
         return True
@@ -69,6 +69,7 @@ print(is_valid_point([3, 5]))      # False
 print(is_valid_point((1, 2, 3)))   # False
 print(is_valid_point(()))          # None
 print(is_valid_point(None))        # None
+print(is_valid_point((False, True)))      # False
 
 print("____________")
 
@@ -119,6 +120,7 @@ def print_sublist_reverse(lst:list, start:int, finish: int):
 
 print(print_sublist_reverse([10, 20, 30, 40, 50, 60], 1, 3))
 print(print_sublist_reverse([1, 2, 3], "0", 2))
+print(print_sublist_reverse([1, 2, 3], False, True))
 
 print("____________")
 
