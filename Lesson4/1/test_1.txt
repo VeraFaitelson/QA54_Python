@@ -1,0 +1,4 @@
+test_logout: PASSED
+test_regiter: PASSED
+test_login: FAILED
+test_logout: PASSED
