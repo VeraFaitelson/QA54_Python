@@ -128,6 +128,14 @@ print("")
 print("Task 5")
 print("")
 
+# 5. Напишите функцию:
+# def validate_discount(discount):
+# Требования:
+# если скидка меньше 0, выбросить:
+# ValueError("Discount cannot be negative")
+# если скидка больше 100, выбросить:
+# ValueError("Discount cannot be greater than 100")
+
 def validate_discount(discount):
     try:
         d = int(discount)
