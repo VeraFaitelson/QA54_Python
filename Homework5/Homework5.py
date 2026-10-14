@@ -47,6 +47,8 @@ print("Новый ID добавлен.")
 loaded_tests = load_test_ids("tests.txt")
 print("Результат чтения из файла:", loaded_tests)
 
+print("Task 2")
+
 # 2.Создайте файл results.csv test_id,status,duration_ms
 # QA-1001,PASSED,120
 # QA-1002,FAILED,230
